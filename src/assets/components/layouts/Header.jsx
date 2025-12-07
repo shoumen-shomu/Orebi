@@ -19,16 +19,16 @@ const Header = () => {
           <div className="w-[60%]">
             <ul className="flex items-center gap-x-8 ">
               <li className="">
-                <Link className="font-sans font-normal text-[14px] text-secendary hover:text-primary font-extrabold duration-500" to={"/"}>Home</Link>
+                <Link className="font-sans font-normal text-[14px] text-secendary hover:text-primary hover:font-extrabold duration-500" to={"/"}>Home</Link>
               </li>
               <li>
-                <Link className="font-sans font-normal text-[14px] text-secendary hover:text-primary font-extrabold duration-500" to={"/shop"}>Shop</Link>
+                <Link className="font-sans font-normal text-[14px] text-secendary hover:text-primary hover:font-extrabold duration-500" to={"/shop"}>Shop</Link>
               </li>
               <li>
-                <Link className="font-sans font-normal text-[14px] text-secendary hover:text-primary font-extrabold duration-500" to={"/about"}>About</Link>
+                <Link className="font-sans font-normal text-[14px] text-secendary hover:text-primary hover:font-extrabold duration-500" to={"/about"}>About</Link>
               </li>
               <li>
-                <Link className="font-sans font-normal text-[14px] text-secendary hover:text-primary font-extrabold duration-500" to={"/contacts"}>Contacts</Link>
+                <Link className="font-sans font-normal text-[14px] text-secendary hover:text-primary hover:font-extrabold duration-500" to={"/contacts"}>Contacts</Link>
               </li>
             </ul>
           </div>
