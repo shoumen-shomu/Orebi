@@ -2,6 +2,7 @@
 
 @theme {
   --color-primary: #262626;
+  --color-secendary: #767676;
   --font-sans: "DM Sans", sans-serif;
   --spacing-myContainer: 1320px;
 }

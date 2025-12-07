@@ -4,9 +4,11 @@ import Flex from "../Flex";
 import Image from "../Image";
 import logo from "/src/assets/logo.png";
 
+
 const Header = () => {
   return (
-    <div className="py-8">
+   <div className="">
+     <div className="py-8">
       <Container>
         <Flex>
           <div className="w-[40%]">
@@ -17,22 +19,24 @@ const Header = () => {
           <div className="w-[60%]">
             <ul className="flex items-center gap-x-8 ">
               <li className="">
-                <Link className={"hover:text-primary"} to={"/"}>Home</Link>
+                <Link className="font-sans font-normal text-[14px] text-secendary hover:text-primary font-extrabold duration-500" to={"/"}>Home</Link>
               </li>
               <li>
-                <Link to={"/shop"}>Shop</Link>
+                <Link className="font-sans font-normal text-[14px] text-secendary hover:text-primary font-extrabold duration-500" to={"/shop"}>Shop</Link>
               </li>
               <li>
-                <Link to={"/about"}>About</Link>
+                <Link className="font-sans font-normal text-[14px] text-secendary hover:text-primary font-extrabold duration-500" to={"/about"}>About</Link>
               </li>
               <li>
-                <Link to={"/contact"}>Contact</Link>
+                <Link className="font-sans font-normal text-[14px] text-secendary hover:text-primary font-extrabold duration-500" to={"/contacts"}>Contacts</Link>
               </li>
             </ul>
           </div>
         </Flex>
       </Container>
     </div>
+    <div className="h-[1px] bg-[#979797]"></div>
+   </div>
   );
 };
 
