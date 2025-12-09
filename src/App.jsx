@@ -1,11 +1,11 @@
 import "./App.css";
-import RootLayout from "./assets/components/layouts/RootLayout";
+import RootLayout from "./components/layouts/RootLayout";
 import { Routes, Route } from "react-router-dom";
-import Home from "./assets/components/pages/Home";
-import Shop from "./assets/components/pages/Shop";
-import Error from "./assets/components/pages/Error";
-import About from "./assets/components/pages/About";
-import Contacts from "./assets/components/pages/Contacts";
+import Home from "./components/pages/Home";
+import Shop from "./components/pages/Shop";
+import Error from "./components/pages/Error";
+import About from "./components/pages/About";
+import Contacts from "./components/pages/Contacts";
 
 function App() {
   return (
