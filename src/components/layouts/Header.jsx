@@ -8,7 +8,7 @@ import logo from "/src/assets/logo.png";
 const Header = () => {
   return (
    <div className="">
-     <div className="py-8">
+     <div className="py-8 ">
       <Container>
         <Flex>
           <div className="w-[40%]">
