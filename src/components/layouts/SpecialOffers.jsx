@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SubHeading from "../SubHeading";
 import Container from "../Container";
 import Products from "../Products";
@@ -12,8 +12,17 @@ import Slider from "react-slick";
 import NextArrows from "../NextArrows";
 import PrevArrows from "../PrevArrows";
 import Flex from "../Flex";
+import axios from "axios";
 
 const SpecialOffers = () => {
+  let [allData, setAllData] = useState([]);
+  useEffect(() => {
+    async function alldatas() {
+      let data = await axios.get("https://dummyjson.com/products");
+      setAllData(data.data.products);
+    }
+    alldatas();
+  });
   var settings = {
     dots: false,
     infinite: true,
@@ -28,15 +37,17 @@ const SpecialOffers = () => {
       <Container className={"pb-[130px]"}>
         <SubHeading className={"pb-12"} text={"Special Offers"} />
         <Slider {...settings} className={"-mx-3"}>
-          <div className="px-3">
-            <Products
-              productsImg={offerOne}
-              badgeText={"-50%"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div className="px-3">
+          {allData.map((item) => (
+            <div className="px-3">
+              <Products
+                productsImg={item.thumbnail}
+                badgeText={item.brand}
+                productName={item.title}
+                productPrice={item.price}
+              />
+            </div>
+          ))}
+          {/* <div className="px-3">
             <Products
               productsImg={offerTwo}
               badgeText={"-20%"}
@@ -91,7 +102,7 @@ const SpecialOffers = () => {
               productName={"Basic Crew Neck Tee"}
               productPrice={"$44.00"}
             />
-          </div>
+          </div> */}
         </Slider>
       </Container>
     </>

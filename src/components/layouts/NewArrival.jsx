@@ -1,7 +1,7 @@
 import Products from "../Products";
 import Container from "../Container";
 import SubHeading from "../SubHeading";
-import Flex from "../Flex";
+// import Flex from "../Flex"; slider dile flex deya lage na
 import productOne from "/src/assets/productOne.png";
 import productTwo from "/src/assets/productTwo.png";
 import productThree from "/src/assets/productThree.png";
@@ -11,8 +11,18 @@ import "slick-carousel/slick/slick.css";
 import Slider from "react-slick";
 import NextArrows from "../NextArrows";
 import PrevArrows from "../PrevArrows";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const NewArrival = () => {
+  let [allData, setAllData] = useState([]);
+  useEffect(() => {
+    async function alldatas() {
+      let data = await axios.get("https://dummyjson.com/products");
+      setAllData(data.data.products);
+    }
+    alldatas();
+  });
   var settings = {
     dots: false,
     infinite: true,
@@ -27,15 +37,17 @@ const NewArrival = () => {
       <Container className={"pb-[118px]"}>
         <SubHeading className={"pb-[75px]"} text={"New Arrivals"} />
         <Slider {...settings} className={"-mx-3"}>
-          <div className="px-3">
-            <Products
-              productsImg={productOne}
-              badgeText={"New"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div className="px-3">
+          {allData.map((item) => (
+            <div className="px-3">
+              <Products
+                productsImg={item.thumbnail}
+                badgeText={item.category}
+                productName={item.title}
+                productPrice={item.price}
+              />
+            </div>
+          ))}
+          {/* <div className="px-3">
             <Products
               productsImg={productTwo}
               badgeText={"Stock Out"}
@@ -74,7 +86,7 @@ const NewArrival = () => {
               productName={"Basic Crew Neck Tee"}
               productPrice={"$44.00"}
             />
-          </div>
+          </div> */}
         </Slider>
       </Container>
     </>
