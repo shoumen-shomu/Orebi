@@ -35,7 +35,7 @@ const Header = () => {
         </Flex>
       </Container>
     </div>
-    <div className="h-[1px] bg-[#979797]"></div>
+    <div className="h-px bg-[#979797]"></div>
    </div>
   );
 };

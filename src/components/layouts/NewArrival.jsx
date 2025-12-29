@@ -47,46 +47,6 @@ const NewArrival = () => {
               />
             </div>
           ))}
-          {/* <div className="px-3">
-            <Products
-              productsImg={productTwo}
-              badgeText={"Stock Out"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div className="px-3">
-            <Products
-              productsImg={productThree}
-              badgeText={"New"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div className="px-3">
-            <Products
-              productsImg={productFour}
-              badgeText={"New"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div className="px-3">
-            <Products
-              productsImg={productFour}
-              badgeText={"New"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div className="px-3">
-            <Products
-              productsImg={productFour}
-              badgeText={"New"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div> */}
         </Slider>
       </Container>
     </>

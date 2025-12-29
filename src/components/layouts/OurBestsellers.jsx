@@ -49,62 +49,6 @@ const OurBestsellers = () => {
               />
             </div>
           ))}
-          {/* <div className="px-3">
-            <Products
-              productsImg={bestTwo}
-              badgeText={"Sold"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div className="px-3">
-            <Products
-              productsImg={bestThree}
-              badgeText={"New"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div className="px-3">
-            <Products
-              productsImg={bestFour}
-              badgeText={"New"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div className="px-3">
-            <Products
-              productsImg={bestFour}
-              badgeText={"New"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div className="px-3">
-            <Products
-              productsImg={bestFour}
-              badgeText={"New"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div className="px-3">
-            <Products
-              productsImg={bestFour}
-              badgeText={"New"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div className="px-3">
-            <Products
-              productsImg={bestFour}
-              badgeText={"New"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div> */}
         </Slider>
       </Container>
     </>

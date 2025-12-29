@@ -36,74 +36,18 @@ const SpecialOffers = () => {
     <>
       <Container className={"pb-[130px]"}>
         <SubHeading className={"pb-12"} text={"Special Offers"} />
-        <Slider {...settings} className={"-mx-3"}>
+        <div className="grid grid-cols-4 gap-6">
+          {/* <Slider {...settings} className={"-mx-3"}> */}
           {allData.map((item) => (
-            <div className="px-3">
               <Products
                 productsImg={item.thumbnail}
                 badgeText={item.brand}
                 productName={item.title}
                 productPrice={item.price}
               />
-            </div>
           ))}
-          {/* <div className="px-3">
-            <Products
-              productsImg={offerTwo}
-              badgeText={"-20%"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div className="px-3">
-            <Products
-              productsImg={offerThree}
-              badgeText={"-40%"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div className="px-3">
-            <Products
-              productsImg={offerFour}
-              badgeText={"New"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div className="px-3">
-            <Products
-              productsImg={offerFour}
-              badgeText={"New"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div className="px-3">
-            <Products
-              productsImg={offerFour}
-              badgeText={"New"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div className="px-3">
-            <Products
-              productsImg={offerFour}
-              badgeText={"New"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div className="px-3">
-            <Products
-              productsImg={offerFour}
-              badgeText={"New"}
-              productName={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div> */}
-        </Slider>
+        </div>
+        {/* </Slider> */}
       </Container>
     </>
   );
