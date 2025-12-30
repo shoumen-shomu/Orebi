@@ -27,48 +27,43 @@ const Searchbar = () => {
                   Shop by Category
                 </h5>
               </Link>
-              {open && (
-                <>
-                  <div
-                    className="fixed inset-0 z-10"
-                    onClick={() => setOpen(false)}
-                  ></div>
-                  <div className="w-[265px] bg-[#262626] absolute left-0 top-7 transition-all duration-300 z-20">
-                    {/* Animation start */}
-                    {/* <div
-    className={`w-[265px] bg-[#262626] absolute left-0 top-7
-    transition-all duration-300 ease-in-out
-    ${
-      open
-        ? "opacity-100 visible translate-y-0"
-        : "opacity-0 invisible -translate-y-3"
-    }`}
-  > */}
-                    {/* Animation End */}
 
-                    <ul>
-                      <li className="font-sans font-normal text-[16px] text-[#c9c3c3] py-4 px-5 border-b border-b-[#424040] hover:text-white hover:ml-2 hover:font-semibold duration-300">
-                        <Link to={"/"}>Accesories</Link>
-                      </li>
-                      <li className="font-sans font-normal text-[16px] text-[#c9c3c3] py-4 px-5 border-b border-b-[#424040] hover:text-white hover:ml-2 hover:font-semibold duration-300">
-                        <Link to={"/"}>Furniture</Link>
-                      </li>
-                      <li className="font-sans font-normal text-[16px] text-[#c9c3c3] py-4 px-5 border-b border-b-[#424040] hover:text-white hover:ml-2 hover:font-semibold duration-300">
-                        <Link to={"/"}>Electronics</Link>
-                      </li>
-                      <li className="font-sans font-normal text-[16px] text-[#c9c3c3] py-4 px-5 border-b border-b-[#424040] hover:text-white hover:ml-2 hover:font-semibold duration-300">
-                        <Link to={"/"}>Clothes</Link>
-                      </li>
-                      <li className="font-sans font-normal text-[16px] text-[#c9c3c3] py-4 px-5 border-b border-b-[#424040] hover:text-white hover:ml-2 hover:font-semibold duration-300">
-                        <Link to={"/"}>Bags</Link>
-                      </li>
-                      <li className="font-sans font-normal text-[16px] text-[#c9c3c3] py-4 px-5 border-b border-b-[#424040] hover:text-white hover:ml-2 hover:font-semibold duration-300">
-                        <Link to={"/"}>Home Appliances</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </>
+              {open && (
+                <div
+                  className="fixed inset-0 z-10"
+                  onClick={() => setOpen(false)}
+                ></div>
               )}
+              <div
+                className={`w-[265px] bg-[#262626] absolute left-0 top-7 z-20
+      transition-all duration-300 ease-in-out
+      ${
+        open
+          ? "opacity-100 visible translate-y-0"
+          : "opacity-0 invisible -translate-y-3"
+      }`}
+              >
+                <ul>
+                  <li className="font-sans font-normal text-[16px] text-[#c9c3c3] py-4 px-5 border-b border-b-[#424040] hover:text-white hover:ml-2 hover:font-semibold duration-300">
+                    <Link to={"/"}>Accesories</Link>
+                  </li>
+                  <li className="font-sans font-normal text-[16px] text-[#c9c3c3] py-4 px-5 border-b border-b-[#424040] hover:text-white hover:ml-2 hover:font-semibold duration-300">
+                    <Link to={"/"}>Furniture</Link>
+                  </li>
+                  <li className="font-sans font-normal text-[16px] text-[#c9c3c3] py-4 px-5 border-b border-b-[#424040] hover:text-white hover:ml-2 hover:font-semibold duration-300">
+                    <Link to={"/"}>Electronics</Link>
+                  </li>
+                  <li className="font-sans font-normal text-[16px] text-[#c9c3c3] py-4 px-5 border-b border-b-[#424040] hover:text-white hover:ml-2 hover:font-semibold duration-300">
+                    <Link to={"/"}>Clothes</Link>
+                  </li>
+                  <li className="font-sans font-normal text-[16px] text-[#c9c3c3] py-4 px-5 border-b border-b-[#424040] hover:text-white hover:ml-2 hover:font-semibold duration-300">
+                    <Link to={"/"}>Bags</Link>
+                  </li>
+                  <li className="font-sans font-normal text-[16px] text-[#c9c3c3] py-4 px-5 border-b border-b-[#424040] hover:text-white hover:ml-2 hover:font-semibold duration-300">
+                    <Link to={"/"}>Home Appliances</Link>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div className="flex py-4 pl-5 w-[400px] bg-white">
               <input
@@ -108,7 +103,7 @@ const Searchbar = () => {
                           <Link to={"/"}>My Account</Link>
                         </li>
                         <li className="font-sans font-normal text-sm text-[#262626] py-[15px] hover:bg-black hover:w-full hover:text-white hover:font-bold duration-300">
-                          <Link to={"/"}>Log Out</Link>
+                          <Link to={"/about"}>Log Out</Link>
                         </li>
                       </ul>
                     </div>
