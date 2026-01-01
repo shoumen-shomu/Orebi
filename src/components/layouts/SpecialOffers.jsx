@@ -22,7 +22,7 @@ const SpecialOffers = () => {
       setAllData(data.data.products);
     }
     alldatas();
-  });
+  },[]);
   var settings = {
     dots: false,
     infinite: true,
@@ -38,7 +38,15 @@ const SpecialOffers = () => {
         <SubHeading className={"pb-12"} text={"Special Offers"} />
         <div className="grid grid-cols-4 gap-6">
           {/* <Slider {...settings} className={"-mx-3"}> */}
-          {allData.map((item) => (
+          {allData.slice(0,4).map((item) => (
+              <Products
+                productsImg={item.thumbnail}
+                badgeText={item.brand}
+                productName={item.title}
+                productPrice={item.price}
+              />
+          ))}
+          {allData.slice(5,9).map((item) => (
               <Products
                 productsImg={item.thumbnail}
                 badgeText={item.brand}
