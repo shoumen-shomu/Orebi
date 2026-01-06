@@ -92,10 +92,7 @@ const Shop = () => {
               {/* Shop by Color */}
               <div className="pt-[50px]">
                 <h3 className=" flex items-center justify-between font-sans font-bold text-xl text-[#262626] pb-[20px]">
-                  Shop by Color{" "}
-                  <Link to={"/"}>
-                    <IoMdArrowDropup />
-                  </Link>
+                  Shop by Color <IoMdArrowDropup className={"cursor-pointer"} />
                 </h3>
                 <ul>
                   <li className="border-b border-b-[#767676]">
@@ -156,9 +153,7 @@ const Shop = () => {
               <div className="pt-[50px]">
                 <h3 className=" flex items-center justify-between font-sans font-bold text-xl text-[#262626] pb-[20px]">
                   Shop by Brand
-                  <Link to={"/"}>
-                    <IoMdArrowDropup />
-                  </Link>
+                  <IoMdArrowDropup className={"cursor-pointer"} />
                 </h3>
                 <ul>
                   <li className="border-b border-b-[#767676]">
@@ -209,13 +204,12 @@ const Shop = () => {
                 </ul>
               </div>
               {/* Shop by Brand */}
-              {/* Shop by Brand */}
+
+              {/* Shop by Price */}
               <div className="pt-[50px]">
                 <h3 className=" flex items-center justify-between font-sans font-bold text-xl text-[#262626] pb-[20px]">
-                  Shop by Brand
-                  <Link to={"/"}>
-                    <IoMdArrowDropup />
-                  </Link>
+                  Shop by Price
+                  <IoMdArrowDropup className={"cursor-pointer"} />
                 </h3>
                 <ul>
                   <li className="border-b border-b-[#767676]">
@@ -265,7 +259,7 @@ const Shop = () => {
                   </li>
                 </ul>
               </div>
-              {/* Shop by Brand */}
+              {/* Shop by Price */}
             </div>
             {/* sidebar */}
             <div className="">
@@ -320,7 +314,7 @@ const Shop = () => {
                 </div>
               </div>
               <div className="grid grid-cols-3 gap-6 pt-15">
-                {allData.slice(0,3).map((item) => (
+                {allData.slice(0, 3).map((item) => (
                   <Products
                     productsImg={item.thumbnail}
                     badgeText={item.brand}
