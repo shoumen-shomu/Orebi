@@ -8,7 +8,7 @@ import { FaShoppingCart } from "react-icons/fa";
 const Products = ({ productsImg, badgeText, productName, productPrice }) => {
   return (
     <div className="group">
-      <div className="relative bg-[#F3F3F3] ">
+      <div className="relative bg-[#F3F3F3]">
         <Image src={productsImg} />
         <Badge className={"absolute top-5 left-5"} badgeText={badgeText} />
         {/* Hover Part Start */}

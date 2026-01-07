@@ -313,7 +313,7 @@ const Shop = () => {
                   </div>
                 </div>
               </div>
-              <div className="grid grid-cols-3 gap-6 pt-15">
+              <div className="grid grid-cols-3 gap-10 pt-15">
                 {allData.slice(0, 3).map((item) => (
                   <Products
                     productsImg={item.thumbnail}
