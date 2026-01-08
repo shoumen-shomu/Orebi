@@ -1,5 +1,5 @@
 import "./App.css";
-import RootLayout from "./components/layouts/RootLayout";
+import RootLayouts from "./components/layouts/RootLayouts";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Shop from "./components/pages/Shop";
@@ -17,17 +17,20 @@ import SpecialEShop from "./components/pages/SpecialEShop";
 import Shipping from "./components/pages/Shipping";
 import SecurePayments from "./components/pages/SecurePayments";
 import TermsConditions from "./components/pages/TermsConditions";
+import Login from "./components/pages/Login";
+
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<RootLayout />}>
+        <Route path="/" element={<RootLayouts />}>
           <Route index element={<Home />} />
           <Route path="shop" element={<Shop />} />
           <Route path="about" element={<About />} />
           <Route path="contacts" element={<Contacts />} />
           <Route path="journal" element={<Journal />} />
+          <Route path="login" element={<Login />} />
           <Route path="category1" element={<Category1 />} />
           <Route path="category2" element={<Category2/>} />
           <Route path="category3" element={<Category3 />} />

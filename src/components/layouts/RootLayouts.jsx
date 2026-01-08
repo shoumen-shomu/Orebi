@@ -3,7 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Searchbar from "./Searchbar";
 
-const RootLayout = () => {
+const RootLayouts = () => {
   return (
     <>
       <Header />
@@ -14,4 +14,4 @@ const RootLayout = () => {
   );
 };
 
-export default RootLayout;
+export default RootLayouts;

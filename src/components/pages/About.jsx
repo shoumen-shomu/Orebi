@@ -5,6 +5,7 @@ import Image from "../Image";
 import clock from "/src/assets/clock.png";
 import busket from "/src/assets/busket.png";
 import Button from "../Button";
+import { Link } from "react-router-dom";
 
 const About = () => {
   // let [allData, setAllData] = useState([]);
@@ -25,21 +26,27 @@ const About = () => {
         <Flex className={"gap-x-10 pt-[136px] pb-[128px]"}>
           <div className="relative">
             <Image src={clock} />
-            <Button
-              className={
-                "w-[280px] absolute left-[50%] bottom-13 -translate-x-1/2"
-              }
-              btnText={"Our Brands"}
-            />
+            <Link  to={"/"}>
+              {" "}
+              <Button
+                className={
+                  "py-7 px-24 w-[280px] absolute left-[50%] bottom-13 -translate-x-1/2"
+                }
+                btnText={"Our Brands"}
+              />
+            </Link>
           </div>
           <div className="relative">
             <Image src={busket} />
-            <Button
-              className={
-                "w-[280px] absolute left-[50%] bottom-8 -translate-x-1/2"
-              }
-              btnText={"Our Stores"}
-            />
+            <Link to={"/"}>
+              {" "}
+              <Button
+                className={
+                  "py-7 px-24 w-[280px] absolute left-[50%] bottom-8 -translate-x-1/2"
+                }
+                btnText={"Our Stores"}
+              />
+            </Link>
           </div>
         </Flex>
         <p className="font-sans font-normal text-[39px] text-[#262626] leading-[52px] w-[1602px] pb-[118px]">

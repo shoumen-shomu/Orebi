@@ -4,6 +4,7 @@ import Intro from "../layouts/Intro"
 import NewArrival from "../layouts/NewArrival"
 import OurBestsellers from "../layouts/OurBestsellers"
 import SpecialOffers from "../layouts/SpecialOffers"
+import Contact from "./Contacts"
 
 
 const Home = () => {

@@ -100,10 +100,13 @@ const Searchbar = () => {
                     <div className="w-[200px] bg-white text-center absolute left-0 top-7 translate-x-[-50%] z-20 transition-all">
                       <ul>
                         <li className="font-sans font-normal text-sm text-[#262626] py-[15px] hover:bg-black hover:w-full hover:text-white hover:font-bold duration-300">
-                          <Link to={"/"}>My Account</Link>
+                          <Link to={"/"}>Sign UP</Link>
                         </li>
                         <li className="font-sans font-normal text-sm text-[#262626] py-[15px] hover:bg-black hover:w-full hover:text-white hover:font-bold duration-300">
-                          <Link to={"/about"}>Log Out</Link>
+                          <Link to={"/login"}>Log In</Link>
+                        </li>
+                        <li className="font-sans font-normal text-sm text-[#262626] py-[15px] hover:bg-black hover:w-full hover:text-white hover:font-bold duration-300">
+                          <Link to={"/about"}>My Account</Link>
                         </li>
                       </ul>
                     </div>
