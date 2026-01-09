@@ -18,6 +18,7 @@ import Shipping from "./components/pages/Shipping";
 import SecurePayments from "./components/pages/SecurePayments";
 import TermsConditions from "./components/pages/TermsConditions";
 import Login from "./components/pages/Login";
+import Signup from "./components/pages/Signup";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="contacts" element={<Contacts />} />
           <Route path="journal" element={<Journal />} />
           <Route path="login" element={<Login />} />
+          <Route path="signup" element={<Signup />} />
           <Route path="category1" element={<Category1 />} />
           <Route path="category2" element={<Category2/>} />
           <Route path="category3" element={<Category3 />} />
