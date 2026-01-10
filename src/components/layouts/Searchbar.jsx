@@ -106,7 +106,7 @@ const Searchbar = () => {
                           <Link to={"/login"}>Log In</Link>
                         </li>
                         <li className="font-sans font-normal text-sm text-[#262626] py-[15px] hover:bg-black hover:w-full hover:text-white hover:font-bold duration-300">
-                          <Link to={"/about"}>My Account</Link>
+                          <Link to={"/myaccount"}>My Account</Link>
                         </li>
                       </ul>
                     </div>

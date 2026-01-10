@@ -19,6 +19,7 @@ import SecurePayments from "./components/pages/SecurePayments";
 import TermsConditions from "./components/pages/TermsConditions";
 import Login from "./components/pages/Login";
 import Signup from "./components/pages/Signup";
+import MyAccount from "./components/pages/MyAccount";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="journal" element={<Journal />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
+          <Route path="myaccount" element={<MyAccount />} />
           <Route path="category1" element={<Category1 />} />
           <Route path="category2" element={<Category2/>} />
           <Route path="category3" element={<Category3 />} />

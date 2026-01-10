@@ -1,7 +1,7 @@
-
 import Container from "../Container";
 import SubHeading from "../SubHeading";
 import Button from "../Button";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -44,12 +44,15 @@ const Login = () => {
                 />
               </div>
             </div>
-            <Button
-              className={
-                "inline-block py-4 px-[77px] border-2 border-black mt-[29px] mb-[70px] hover:bg-transparent hover:text-black duration-300"
-              }
-              btnText={"Log in"}
-            />
+            <Link to={"/myaccount"}>
+              {" "}
+              <Button
+                className={
+                  "inline-block py-4 px-[77px] border-2 border-black mt-[29px] mb-[70px] hover:bg-transparent hover:text-black duration-300"
+                }
+                btnText={"Log in"}
+              />
+            </Link>
           </div>
           <div className="bg-[#F0F0F0] h-px mt-[62px] mb-[57px]"></div>
           <div className="">
@@ -61,10 +64,15 @@ const Login = () => {
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the.
             </p>
-            <Button
-              className={"inline-block py-4 px-[77px] "}
-              btnText={"Continue"}
-            />
+            <Link to={"/signup"}>
+              {" "}
+              <Button
+                className={
+                  "inline-block py-4 px-[77px] border-2 border-black hover:bg-transparent hover:text-black duration-300 "
+                }
+                btnText={"Continue"}
+              />
+            </Link>
           </div>
         </Container>
       </div>

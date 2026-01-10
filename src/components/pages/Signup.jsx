@@ -272,18 +272,24 @@ const Signup = () => {
             <div className="">
               <label className="mr-8">
                 <input type="radio" name="Subscribe Newsletter" />
-                <span className="font-sans font-normal text-[14px] text-[#767676] pl-1.5">Yes</span>
+                <span className="font-sans font-normal text-[14px] text-[#767676] pl-1.5">
+                  Yes
+                </span>
               </label>
               <label className="">
                 <input type="radio" name="Subscribe Newsletter" />
-                <span className="font-sans font-normal text-[14px] text-[#767676] pl-1.5">No</span>
+                <span className="font-sans font-normal text-[14px] text-[#767676] pl-1.5">
+                  No
+                </span>
               </label>
             </div>
           </div>
           <Link to={"/"}>
-          <Button
-              className={"inline-block py-4 px-[77px] mt-[27px]"}
-              btnText={"Log in"}
+            <Button
+              className={
+                "inline-block py-4 px-[77px] mt-[27px] border-2 border-black hover:bg-transparent hover:text-black duration-300"
+              }
+              btnText={"Sign up"}
             />
           </Link>
         </Container>
