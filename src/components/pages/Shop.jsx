@@ -359,27 +359,27 @@ const Shop = () => {
                 {" "}
                 <PaginationContent>
                   {" "}
-                  <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100">
+                  <PaginationItem className="font-sans font-normal text-sm text-[#767676]">
                     {" "}
                     <PaginationLink href="#">1</PaginationLink>{" "}
                   </PaginationItem>{" "}
-                  <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100">
+                  <PaginationItem className="font-sans font-normal text-sm text-[#767676]">
                     {" "}
                     <PaginationLink href="#">2</PaginationLink>{" "}
                   </PaginationItem>{" "}
-                  <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100">
+                  <PaginationItem className="font-sans font-normal text-sm text-[#767676]">
                     {" "}
                     <PaginationLink href="#">3</PaginationLink>{" "}
                   </PaginationItem>{" "}
-                  <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100">
+                  <PaginationItem className="font-sans font-normal text-sm text-[#767676]">
                     {" "}
                     <PaginationLink href="#">4</PaginationLink>{" "}
                   </PaginationItem>{" "}
-                  <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100">
+                  <PaginationItem className="font-sans font-normal text-sm text-[#767676]">
                     {" "}
                     <PaginationEllipsis />{" "}
                   </PaginationItem>{" "}
-                  <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100">
+                  <PaginationItem className="font-sans font-normal text-sm text-[#767676]">
                     {" "}
                     <PaginationLink href="#">10</PaginationLink>{" "}
                   </PaginationItem>{" "}

@@ -13,4 +13,5 @@ a[data-slot="pagination-link"]:hover{
   background: black;
   border: 1px solid #f0f0f0;
   color: white;
+  transition: .3s;
 }
