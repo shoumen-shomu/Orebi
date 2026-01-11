@@ -356,12 +356,42 @@ const Shop = () => {
                 ))}
               </div>
               <Pagination>
+                {" "}
+                <PaginationContent>
+                  {" "}
+                  <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100">
+                    {" "}
+                    <PaginationLink href="#">1</PaginationLink>{" "}
+                  </PaginationItem>{" "}
+                  <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100">
+                    {" "}
+                    <PaginationLink href="#">2</PaginationLink>{" "}
+                  </PaginationItem>{" "}
+                  <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100">
+                    {" "}
+                    <PaginationLink href="#">3</PaginationLink>{" "}
+                  </PaginationItem>{" "}
+                  <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100">
+                    {" "}
+                    <PaginationLink href="#">4</PaginationLink>{" "}
+                  </PaginationItem>{" "}
+                  <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100">
+                    {" "}
+                    <PaginationEllipsis />{" "}
+                  </PaginationItem>{" "}
+                  <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100">
+                    {" "}
+                    <PaginationLink href="#">10</PaginationLink>{" "}
+                  </PaginationItem>{" "}
+                </PaginationContent>{" "}
+              </Pagination>
+              {/* <Pagination>
                 <PaginationContent>
                   <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100" >
                     <PaginationLink asChild><Link to="/shop">1</Link></PaginationLink>
                   </PaginationItem>
-                  <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100" >
-                    <PaginationLink asChild><Link to="/shop">2</Link></PaginationLink>
+                  <PaginationItem  >
+                    <PaginationLink className="font-sans font-normal text-sm text-[#767676] duration-100" asChild><Link to="/shop">2</Link></PaginationLink>
                   </PaginationItem>
                   <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100" >
                     <PaginationLink asChild><Link to="/shop">3</Link></PaginationLink>
@@ -376,7 +406,7 @@ const Shop = () => {
                     <PaginationLink asChild><Link to="/shop">10</Link></PaginationLink>
                   </PaginationItem>
                 </PaginationContent>
-              </Pagination>
+              </Pagination> */}
             </div>
           </div>
         </div>

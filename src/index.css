@@ -2,14 +2,15 @@ nav[role="navigation"] {
   justify-content: start;
   margin-top: 50px;
 }
-li[data-slot="pagination-item"] {
+
+a[data-slot="pagination-link"] {
+  background: white;
   padding: 9px 13px;
   border: 1px solid #f0f0f0;
   margin-right: 15px;
 }
-li[data-slot="pagination-item"]:hover{
-    border: 1px solid black;
-    background: black;
-    color: white;
-
+a[data-slot="pagination-link"]:hover{
+  background: black;
+  border: 1px solid #f0f0f0;
+  color: white;
 }
