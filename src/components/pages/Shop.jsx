@@ -1,13 +1,21 @@
 import React, { useEffect, useState } from "react";
 import Container from "../Container";
 import SubHeading from "../SubHeading";
-import Flex from "../Flex";
 import { Link } from "react-router-dom";
 import { FaPlus } from "react-icons/fa6";
 import { IoMdArrowDropup } from "react-icons/io";
 import { FaList } from "react-icons/fa";
 import axios from "axios";
 import Products from "../Products";
+// Shadecn
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+} from "@/components/ui/pagination";
+// Shadecn
 
 const Shop = () => {
   let [allData, setAllData] = useState([]);
@@ -347,6 +355,28 @@ const Shop = () => {
                   />
                 ))}
               </div>
+              <Pagination>
+                <PaginationContent>
+                  <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100" >
+                    <PaginationLink asChild><Link to="/shop">1</Link></PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100" >
+                    <PaginationLink asChild><Link to="/shop">2</Link></PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100" >
+                    <PaginationLink asChild><Link to="/shop">3</Link></PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100" >
+                    <PaginationLink asChild><Link to="/shop">4</Link></PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100" >
+                    <PaginationEllipsis />
+                  </PaginationItem>
+                  <PaginationItem className="font-sans font-normal text-sm text-[#767676] duration-100" >
+                    <PaginationLink asChild><Link to="/shop">10</Link></PaginationLink>
+                  </PaginationItem>
+                </PaginationContent>
+              </Pagination>
             </div>
           </div>
         </div>
